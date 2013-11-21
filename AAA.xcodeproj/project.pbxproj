@@ -21,6 +21,7 @@
 		EA23A4CB183ECB10004B0C49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA23A4AD183ECB10004B0C49 /* UIKit.framework */; };
 		EA23A4D3183ECB10004B0C49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA23A4D1183ECB10004B0C49 /* InfoPlist.strings */; };
 		EA23A4D5183ECB10004B0C49 /* AAATests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA23A4D4183ECB10004B0C49 /* AAATests.m */; };
+		EA23A4DF183ECD84004B0C49 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA23A4DE183ECD84004B0C49 /* libiconv.2.4.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		EA23A4D0183ECB10004B0C49 /* AAATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AAATests-Info.plist"; sourceTree = "<group>"; };
 		EA23A4D2183ECB10004B0C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA23A4D4183ECB10004B0C49 /* AAATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAATests.m; sourceTree = "<group>"; };
+		EA23A4DE183ECD84004B0C49 /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		EA23A4E0183ECF73004B0C49 /* HZK.DAT */ = {isa = PBXFileReference; lastKnownFileType = file; path = HZK.DAT; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA23A4DF183ECD84004B0C49 /* libiconv.2.4.0.dylib in Frameworks */,
 				EA23A4AC183ECB10004B0C49 /* CoreGraphics.framework in Frameworks */,
 				EA23A4AE183ECB10004B0C49 /* UIKit.framework in Frameworks */,
 				EA23A4AA183ECB10004B0C49 /* Foundation.framework in Frameworks */,
@@ -101,6 +105,7 @@
 		EA23A4A8183ECB10004B0C49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA23A4DE183ECD84004B0C49 /* libiconv.2.4.0.dylib */,
 				EA23A4A9183ECB10004B0C49 /* Foundation.framework */,
 				EA23A4AB183ECB10004B0C49 /* CoreGraphics.framework */,
 				EA23A4AD183ECB10004B0C49 /* UIKit.framework */,
@@ -126,6 +131,7 @@
 		EA23A4B0183ECB10004B0C49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA23A4E0183ECF73004B0C49 /* HZK.DAT */,
 				EA23A4B1183ECB10004B0C49 /* AAA-Info.plist */,
 				EA23A4B2183ECB10004B0C49 /* InfoPlist.strings */,
 				EA23A4B5183ECB10004B0C49 /* main.m */,
@@ -381,6 +387,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AAA/AAA-Prefix.pch";
 				INFOPLIST_FILE = "AAA/AAA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AAA/AAA-Prefix.pch";
 				INFOPLIST_FILE = "AAA/AAA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
